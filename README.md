@@ -1,12 +1,12 @@
-# go-restful-api-reference
+# gin-restful-api-reference
 
 restful api 구현을 위한 hello, world code
 
 # 환경 설정
 
 1. config.json
-    1. `database.host` 를 local mysql host으로 변경하세요.
-    1. 이외의 property도 코드를 이해하고 수정하세요.
+   1. `database.host` 를 local mysql host으로 변경하세요.
+   1. 이외의 property도 코드를 이해하고 수정하세요.
 1. models의 `memo.go` 에서 테이블 자동 생성 이름을 변경할 수 있습니다.
 1. 이외 혹시 모르니 `go mod tidy` 를 하면 좋습니다.
 
