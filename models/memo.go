@@ -14,6 +14,11 @@ type Memos struct {
 	CreatedAt time.Time `json:"createAt"`
 }
 
+// TODO: 테이블 이름 수동으로 설정하는 방법
+// func (Memos) TableName() string {
+// 	return "profiles"
+// }
+
 func GetMemo(id string) (memo Memos, err error) {
 	uintID, err := common.ConvertStringToUint(id)
 	if err != nil {

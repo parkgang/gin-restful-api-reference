@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"log"
 	"time"
@@ -53,7 +54,9 @@ func main() {
 
 	routers.Init(r)
 
+	// TODO: 스웨거 웹 페이지 호스트 되는 곳은 아니고 스웨거 내부에서 API 테스트를 위한 호출 주소
 	docs.SwaggerInfo.Host = "127.0.0.1:8080"
 
+	fmt.Println("gin server listen: localhost:8080")
 	r.Run(":8080")
 }
